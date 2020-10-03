@@ -105,7 +105,7 @@ body{
 
 .remaining-container{
   position: absolute;
-  left: 62.5px;
+  right: 57.5px;
   bottom: -37.5px;
   background-color: #FFF;
   border-radius: 10px;
@@ -133,4 +133,118 @@ body{
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 700px) {
+
+  body{
+    margin:0 auto;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    background-color: hsl(229, 57%, 11%);
+    background-image: url("images/bg-desktop.png");
+    background-size: 100vw 50vh;
+    background-position:bottom;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-container{
+    margin: 0 35px 0 0;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px;
+    border-top-right-radius: 100px;
+    width: 350px;
+    height: 200px;
+  }
+
+  .storage-container{
+    margin: 35px 0 0 0;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px;
+    color: hsl(243, 100%, 93%);
+    width: 45%;
+    height: 165px;
+  }
+
+  .storage-notification{
+    margin-top: 30px;
+    margin-left: 45px;
+    text-align: left;
+  }
+
+  .progress{
+    position: relative;
+    width: 90%;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    background: hsl(229, 57%, 20%);
+  }
+
+  .inner-progress{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 81.5%;
+    height: 14px;
+    border-radius: 25px;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  }
+
+  .end-point{
+    position: absolute;
+    top:1px;
+    right: 2px;
+    width: 11px;
+    height: 11px;
+    border-radius: 100%;
+    background-color: #FFF;
+  }
+
+  .min{
+    position: absolute;
+    left: 5%;
+  }
+
+  .max{
+    position: absolute;
+    right: 5%;
+  }
+
+  .remaining-container{
+    top: -50.5px;
+    right: 5.5%;
+    background-color: #FFF;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    height: 75px;
+  }
+
+  .rc-triangle{
+    border-top: 40px solid transparent;
+    border-right: 40px solid #fff;
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid transparent;
+    position: absolute;
+    right:0;
+    bottom: -20px;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 50px;
+    font-size: 11px;
+    text-align: center;
+    color: hsl(243, 100%, 93%);
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
 }
